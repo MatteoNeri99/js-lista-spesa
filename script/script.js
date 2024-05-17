@@ -3,14 +3,14 @@ const listaSpesa =["latte","cacao","biscotti","mortadella","pane","acqua","pasta
 let index=0;
 
 
+const container= document.querySelector("ul.container");
 
 
 while( index<listaSpesa.length){
-    const container= document.querySelector("ul.container");
 
     let liEl =document.createElement("li");
-
-    container.appendChild(document.createElement("li"));
+    
+    container.appendChild(liEl);
 
     liEl.append(listaSpesa[index])
     
@@ -19,3 +19,6 @@ while( index<listaSpesa.length){
 }
 
 console.log(listaSpesa.length)
+
+
+// aggiungere un function che riceve come parametro una delle stringhe contenute nell'array e che restituisce  un elemnto li con all'interno quella stringa
